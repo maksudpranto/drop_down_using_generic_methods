@@ -17,5 +17,6 @@ def stop_after_specific_value(drop_down_name, value):
     items = Select(drop_down_name)
     values = items.options
     for item in values:
+        print(item.text)
         if item.text == value:
             break
